@@ -23,7 +23,7 @@ def sum_two(first_digit, second_digit):
 
 
 def sub(first_digit, second_digit):
-    return first_digit + second_digit
+    return first_digit - second_digit
 
 
 def mul_two(first_digit, second_digit):

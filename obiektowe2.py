@@ -74,12 +74,6 @@ def top_titles(library:list,quantity:int,content_type):
     return result
 
 
-
-
-
-
-
-
 def main():
     movie_library =[Film('Titanic',1997,'drama',15_928_283),
                     Series(14,3,'Greys Anatomy',2005, 'medical drama',8_547_273),

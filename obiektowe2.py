@@ -84,7 +84,7 @@ def main():
     movie_library =[Film('Titanic',1997,'drama',15_928_283),
                     Series(14,3,'Greys Anatomy',2005, 'medical drama',8_547_273),
                     Film('Notting Hill',1999,'romantic comedy', 10_627_829),
-                    Film('Love Actually',2004,'romantic comedy',12_647_029),
+                    Film('Love Actually',2004,'romantic comedy',12_627_029),
                     Series(5,6,'New Girl',2011,'comedy',3_938_823),
                     Series(10,5,'Friends',1994,'comedy',28_938_192),
                     Series(8,2,'Reign',2013,'historical drama',1_938_931)]

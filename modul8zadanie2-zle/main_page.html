@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?{{ timestamp }}">
+
+</head>
+<div id="powitanie">
+    <h1>Co chcesz zobaczyć?</h1>
+</div>
+<div id="lista">
+<ul class="lista">
+    <li><a href="{{ url_for('about_me') }}">Strona Domowa</a> </li>
+    <li><a href="{{ url_for('contact') }}">Kontakt</a></li>
+    <li><a href="{{ url_for('contact_sheet') }}">Zapisz się</a></li>
+
+
+</ul>
+</div>
+
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block headline %}
+WITAM NA MOJEJ STRONIE
+{% endblock %}
+{% block photo %}
+{{url_for('static',filename='lilpeep.jpg')}}
+{% endblock %}
+{% block content %}
+<div id="tresc1">
+    <h2><strong>O mnie</strong></h2>
+</div>
+<div id="dane">
+    <p class="dane"><strong>imię:</strong> Julia</p>
+    <p class="dane"><strong>nazwisko:</strong> Sidor</p>
+</div>
+{% endblock %}

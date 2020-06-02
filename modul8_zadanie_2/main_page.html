@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block headline %}
+STRONA GŁÓWNA
+{% endblock %}
+{% block content %}
+<div id="lista">
+<ul class="lista">
+    <li><a href="{{ url_for('about_me') }}">Strona Domowa</a> </li>
+    <li><a href="{{ url_for('contact') }}">Kontakt</a></li>
+    <li><a href="{{ url_for('contact_sheet') }}">Zapisz się</a></li>
+</ul>
+</div>
+{% endblock %}

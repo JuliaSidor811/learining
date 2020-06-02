@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?{{ timestamp }}">
+</head>
+<body>
+<div id="powitanie">
+    <h1>{% block headline %}{% endblock %}</h1>
+</div>
+
+<div id="zdjecie">
+  <img src="{% block photo %}{% endblock %}" />
+</div>
+
+
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+</body>
+</html>

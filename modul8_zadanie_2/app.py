@@ -24,11 +24,12 @@ def contact():
 @app.route('/contactme', methods=['GET', 'POST'])
 def contact_sheet():
     if request.method == 'GET':
-        return render_template("contact_me.html")
+        return render_template("contact_me.html", timestamp=time())
     elif request.method == 'POST':
-        name = request.form.get('firstname')
-        print(name)
-        return redirect("/")
+        data = request.form
+        username = data.get("firstname")
+        return f"Dziękujemy {username}"
+
 
 
 if __name__ == '__main__':

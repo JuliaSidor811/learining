@@ -1,0 +1,37 @@
+body{
+    background-image: url("money1.jpg");
+}
+
+
+#headline h1{
+    display: table;
+    margin-left: 600px;
+    color: #547850;
+    font-size: 100px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+#currency_choice .currency_choice{
+
+    margin-left: 800px;
+    font-size: 42px;
+
+}
+#opperation_choice .opperation_choice{
+
+    margin-left: 800px;
+    font-size: 42px;
+
+}
+#amount_choice .amount_choice{
+
+    margin-left: 800px;
+    font-size: 42px;
+
+}
+#button input{
+
+    margin-left: 960px;
+    margin-bottom: 30px;
+}

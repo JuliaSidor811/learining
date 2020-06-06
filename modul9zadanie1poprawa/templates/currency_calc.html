@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% if codes %}
+{% block content %}
+<form method="post" action="/">
+    <div id="currency_choice">
+        <label for="code" class="currency_choice"><strong>Choose currency: </strong></label>
+
+    <select name="currency" id="currency">
+        {% for code in codes %}
+        <option value="{{ code }}">{{ code }}</option>
+        {% endfor %}
+    </select><br>
+    </div>
+
+    <div id="opperation_choice">
+        <label for="opperation" class="opperation_choice"><strong>Choose opperation: </strong> </label>
+    <select name="opperation" id="opperation">
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+    </select><br>
+    </div>
+
+    <div id="amount_choice">
+    <label for="amount" class="amount_choice"><strong>Amount: </strong> </label>
+    <input type="text" id="amount" name="amount">
+    </div>
+    <div id="button">
+    <input type="submit" value="send"/>
+    </div>
+
+</form>
+
+{% endblock %}
+{% endif %}
